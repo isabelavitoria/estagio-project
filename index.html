@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="img/icon wiki.png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="div-header">
+            <div class="div-wiki">
+
+                <button id="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </button>
+                
+                <div class="globo-wiki">
+                    <div id="globo">
+                        <img id="globo" src="img/globo wiki.png" alt="globo">
+                    </div>
+        
+                    <div class="wiki-enciclo">
+                        <img src="img/wikipedia-wordmark-fr.svg" alt="wikipedia">
+                        <img src="img/wikipedia-tagline-pt.svg" alt="enciclopedia">
+                    </div>
+                </div>
+    
+            </div>
+
+            <div class="div-input">
+                <div>
+                    <svg id="lupa" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <input id="input" type="text" placeholder="Pesquisar na Wikipédia">
+                </div>
+            </div>
+
+            <div class="div-conta">
+                <span id="criar-conta">Criar uma conta</span>
+                <button id="btn2"><span>...</span></button>
+            </div>
+            
+        </div>
+
+    </header>
+    
+    <div class="conteudo-geral">
+        <nav>
+            <div>
+                <div class="nav1">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Página principal</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Conteúdo destacado</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Eventos atuais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Esplanada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Página aleatória</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Informar um erro</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Colaboração</a>
+                        </li>
+                        <hr class="linha-cinza">
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link active" aria-current="page" href="#">Boas-vindas</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link" href="#">Ajuda</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link" href="#">Página de testes</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Portal comunitário</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Mudanças recentes</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Manutenção</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Criar página</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Páginas novas</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Donativos</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Ferramentas</a>
+                        </li>
+                        <hr class="linha-cinza">
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link active" aria-current="page" href="#">Páginas afluentes</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link" href="#">Alterações relacionadas</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link" href="#">Carregar ficheiro</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Páginas especiais</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Hiperligação permanente</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Informações da página</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Citar esta página</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">Elemento Wikidata</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                            <a class="nav-link" href="#">
+                                <!-- para mudar o tamanho do lapís, foi alterado o valor de width e height do svg abaixo. E sua cor também, no "fill="black" -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="black" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                </svg>
+                                Editar hiperligações<br> interlínguas
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Imprimir/exportar</a>
+                        </li>
+                        <hr class="linha-cinza">
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link active" aria-current="page" href="#">Criar um livro</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link" href="#">Descarregar como PDF</a>
+                        </li>
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link" href="#">Versão para impressão</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Noutros projetos</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item subir-palavra">
+                          <a class="nav-link active" aria-current="page" href="#">Wikimedia Commons</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Idiomas</a>
+                        </li>
+                        <hr class="linha-cinza">
+                        <li class="nav-item subir-palavra-textinho">
+                          <div id="texto-curto">Nesta Wikipédia, os atalhos de idioma estão na <a href="#"> parte superior da página, em frente ao título do artigo.</a></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Conteúdo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#historia">História</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#descricao">Descrição</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exemplos">Exemplos de código HTML5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popularidade">Popularidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#logo">Logo do HTML5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novos-elementos">Novos elementos do HTML5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ver-tambem">Ver também</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bibliografia">Bibliografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#referencias">Referências</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ligacoes">Ligações externas</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        
+        <main>
+            <header class="header-assunto">
+                <div id="inicio" class="header-html">
+                    <h3 id="html5">HTML5</h1>
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>50 línguas</option>
+                    <option value="1">Inglês</option>
+                    <option value="2">Português</option>
+                    <option value="3">Japonês</option>
+                    </select>
+                </div>
+            </header>
+            <div class="opcoes-pagina">
+                <ul class="opcoes-01">
+                    <li>
+                        <a id="artigo" href="#">
+                            Artigo
+                        </a>
+                    </li>
+                    <li>
+                        <a class="efeito-hover" id="discussao" href="#">
+                            Discussão
+                        </a>
+                    </li>
+                </ul>
+                <ul class="opcoes-02">
+                    <li>
+                        <a id="ler" href="#">
+                            Ler
+                        </a>
+                    </li>
+                    <li>
+                        <a class="efeito-hover" href="#">
+                            Editar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="efeito-hover" href="#">
+                            Ver histórico
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="div-conteudo">
+                <p id="frase">Origem: Wikipédia, a enciclopédia livre.</p>
+                <div class="texto-com-img">
+                    <div class="texto1">
+                        <p id="conteudo">
+                            <b>HTML5</b> (<a href="#">Hypertext Markup Language</a>, versão 5) é uma <a href="#">linguagem de marcação</a> para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por <a href="#"></a>Opera Software</a>.[1] É a quinta versão da linguagem <a id="html-maisEscuro" href="#">HTML</a>. Esta nova versão traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web, através de novas funcionalidades como semântica e acessibilidade. Possibilita o uso de novos recursos antes possíveis apenas com a aplicação de outras tecnologias. Sua essência tem sido melhorar a linguagem com o suporte para as mais recentes multimídias, enquanto a mantém facilmente legível por seres humanos e consistentemente compreendida por computadores e outros dispositivos (<a href="#">navegadores</a>, parsers etc). O HTML5 será o novo padrão para <a href="#">HTML</a>, <a href="#">XHTML</a>, e HTML DOM. Atualmente, está em fase de esboço, porém diversos navegadores já implementam algumas de suas funcionalidades.
+                        </p>
+                        <p id="conteudo">
+                            Após seus predecessores imediatos HTML 4.01 e XHTML 1.1, HTML5 é uma resposta à observação de que o HTML e o XHTML, de uso comum na <a href="#">World Wide Web</a>, é uma mistura de características introduzidas por várias especificações, juntamente com aquelas introduzidas por software, tais como os navegadores, aqueles estabelecidos pela prática comum, e os muitos erros de sintaxe em documentos existentes na web. É, também, uma tentativa de definir uma única linguagem simples de marcação que possa ser escrita em HTML ou em sintaxe XHTML. Isso inclui modelos de processamento detalhados para incentivar implementações mais interoperáveis; isso estende, melhora e racionaliza a marcação disponível para documentos, e introduz marcações e <a href="#">interfaces de programação de aplicações</a> (APIs) para aplicações web complexas. Pelas mesmas razões, HTML5 também é um candidato em potencial aplicações <a href="#">multi-plataforma</a> móveis. Muitos recursos do HTML5 tem sido construídos com a consideração de ser capaz de executar em dispositivos de baixa potência como <a href="#">smartphones</a> e tablets.[2]
+                        </p>
+                    </div>
+                    <div class="caixa-html">
+                        <div id="hypertext">
+                            <p id="markup">HyperText Markup Language</p>
+                        </div>
+                        <img src="img/html simbolo.png" alt="simbolo HTML">
+                        <div class="detalhes-html">
+                            <ul>
+                                <li>
+                                    <a id="html-detalhe1" href="#">
+                                        Extensão do arquivo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="html-detalhes2" href="#">
+                                        MIME
+                                    </a>
+                                </li>
+                                <li>
+                                    <p id="html-detalhes3">
+                                        Desenvolvido por
+                                    </p>
+                                </li>
+                                <li>
+                                    <a id="html-detalhes4" href="#">
+                                        Página oficial
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li class="htm" id="htm">
+                                    .htm, .html
+                                </li>
+                                <li class="htm" id="text/html">
+                                    text/hmtl
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Word wide Web<br> Consortium
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        html.spec.whatwg<br>.org
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Em particular, HTML5 adiciona várias novas funções sintáticas. Elas incluem as tags de &lt;video&gt;, &lt;audio&gt;, &lt;header&gt; e elementos &lt;<a href="#">canvas</a>&gt;, assim como a integração de conteúdos <a href="#">SVG</a> que substituem o uso de tags &lt;object&gt; genéricas. Estas funções são projetadas para tornar mais fácil a inclusão e a manipulação de conteúdo gráfico e multimídia na web sem ter de recorrer a <a href="#">plugins proprietários</a> e APIs. Outros novos elementos, como &lt;section&gt;, &lt;article&gt;, &lt;header&gt; e &lt;nav&gt;, são projetados para enriquecer o conteúdo semântico dos documentos. Novos atributos têm sido introduzidos com o mesmo propósito, enquanto alguns elementos e atributos têm sido removidos. Alguns elementos, como &lt;a&gt;, &lt;cite&gt; e &lt;menu&gt; têm sido mudados, redefinidos ou padronizados. As APIs e os modelos de objetos de documentos <a href="#">(DOM)</a> não são mais pensamentos retrógrados, mas são partes fundamentais da especificação do HTML5.[2] HTML5 também define com algum detalhe o processamento necessário para que erros de sintaxe de documentos inválidos sejam tratados uniformemente por todos os browsers e outros agentes de usuários em conformidade com o HTML5.[3]
+                </p>
+                <h3 id="historia">História</h1>
+                <hr>
+                <p> 
+                    O <a href="#">Web Hypertext Application Technology Working Group</a> (WHATWG) iniciou o trabalho do novo padrão HTML em 2004, quando o <a href="#">World Wide Web Consortium</a> (W3C) estava se concentrando no futuro desenvolvimento do XHTML 2.0, e o HTML 4.01 não tinha sido atualizado desde 2001. [4] Em 2009, o W3C decidiu que o Grupo de Trabalho do <a href="#">XHTML 2.0</a> deveria parar seus trabalhos, e assim, descontinuar o padrão. Desta forma o W3C e o WHATWG passaram a trabalhar juntas no desenvolvimento do HTML5. [5]
+
+                    O projeto do HTML5 foi bem recebido pelos desenvolvedores Web até então, e tornou-se tema na mídia em abril de 2010 [6] [7] depois que o CEO da <a href="#">Apple Inc.</a>, <a href="#">Steve Jobs</a> emitiu uma carta pública intitulada "Reflexões sobre o Adobe Flash", onde ele conclui que o desenvolvimento do HTML5 tornaria o <a href="#">Adobe Flash</a> desnecessário, tanto para assistir vídeo ou mesmo exibir qualquer conteúdo web. Isso provocou um debate entre os desenvolvedores Web, onde muitos sugeriram que, enquanto o HTML5 proporcionasse uma melhor funcionalidade, a variedade de browsers existentes exibiria páginas diferentes, tendo um resultado diferente em cada navegador e não se conseguiria de fato chegar a um padrão.[8] No início de novembro de 2011 a Adobe anunciou que iria interromper o desenvolvimento de <a href="#">Flash</a> para dispositivos móveis e redirecionar seus esforços para o desenvolvimento de ferramentas utilizando HTML5.
+                </p>
+                <h3 id="descricao">Descrição</h3>
+                <hr>
+                <p>
+                    No início de 2008 o <a href="#">W3C</a> – consórcio de empresas de tecnologia que coordena os padrões da internet quanto a linguagem – anunciou a primeira especificação do HTML5. O HTML, que é responsável por organizar e formatar as páginas que visitamos na Internet, está em sua versão 4.0.1 e continua evoluindo. Após cinco anos de trabalho, desde 2008 está em fase de esboço, enquanto a versão final está prevista para 2014. Foram feitas grandes alterações, que incluem:
+                </p>
+                <ul>
+                    <li>Novas <a href="#">API</a>’s, entre elas uma para desenvolvimento de gráficos bidimensionais</li>
+                    <li>Controle embutido de conteúdo multimídia</li>
+                    <li>Aprimoramento do uso offline</li>
+                    <li>Melhoria na <a href="#">depuração</a> de erros</li>
+                </ul>
+                <p>
+                    Esta evolução da linguagem padrão para web pode eliminar a necessidade de <a href="#">plug-ins</a> para aplicações <a href="#">multimídia</a> em navegadores. Diversos críticos consideram a tecnologia como um forte concorrente ao <a href="#">Flash</a>, da <a href="#">Adobe</a>, ao <a href="#">Silverlight</a>, da <a href="#">Microsoft</a>, e ao recente <a href="#">JavaFX</a>, da <a href="#">Sun (Oracle)</a>. Recentemente, Shantanu Narayen, <a href="#">diretor executivo</a> da Adobe, disse que o Flash não iria perder mercado, porém a versão 5 do HTML já está sendo chamada de "Flash-killer" (Assassino do Flash). Estas tecnologias precisarão se adaptar rapidamente para conseguir manter-se no mercado, tão populares quanto hoje. Na avaliação do co-diretor de ferramentas da <a href="#">Mozilla</a>, Ben Galbraith, as tecnologias viabilizadas pelo HTML5 como o <a href="#">Canvas</a> para desenhos 2D e o armazenamento de conteúdos no desktop, permitirão que "usemos mais o browser do que nunca".
+                </p>
+                <p>
+                    Após dez anos sem atualizações, a forma como se escreve páginas na internet passa por uma boa transformação. O HTML5 oferece uma experiência web totalmente diferente para usuários e embora exista um longo caminho para ser finalizado, muitos navegadores importantes, como <a href="#">Internet Explorer 9</a>, <a href="#">Opera</a>, <a href="#">Safari</a> 4, <a href="#">Firefox</a> 3.6 e <a href="#">Chrome</a> já implementaram grandes partes da linguagem, incluindo tags de vídeo e suporte à tecnologia <a href="#">Canvas</a>. Com a evolução da linguagem, os navegadores passam da categoria "mostradores" de páginas para um renderizador de "web software".
+                </p>
+                <p>
+                    Assim como surgiram as <a href="#">app stores</a> para aplicações nativas, existem appstores especificas para aplicações HTML5, os desenvolvedores podem utilizar a audiência das appstores para distribuir seu aplicativo e também fazer cobrança (as appstores oferecem integrações para permitir a cobrança). Como, por exemplo, a <a id="zeewe" href="#">Zeewe</a>, loja de apps HTML5 focada em <a href="#">smartphones</a>.
+                </p>
+                <h3 id="exemplos">
+                    Exemplos de código HTML5
+                </h3>
+                <hr>
+                <p>Códigos para testes de HTML5:</p>
+                <div id="codigos-html1">
+                    <pre id="html-pre1">
+                        <span>1</span>  <span class="doctype">&lt;!DOCTYPE html&gt;</span>
+                        <span>2</span>  <span class="tags">&lt;html <span class="lang">lang</span>=<span class="pt-br">"pt-BR"</span>&gt;</span>
+                        <span>3</span>    <span class="tags">&lt;head&gt;</span>  
+                        <span>4</span>      <span class="tags">&lt;meta <span class="lang">charset</span>=<span class="pt-br">"UTF-8"</span>&gt;</span>
+                        <span>5</span>      <span class="tags">&lt;title&gt;<span class="preto-html">Teste de Página</span>&lt;/title&gt;</span> 
+                        <span>6</span>    <span class="tags">&lt;/head&gt;</span>  
+                        <span>7</span>    <span class="tags">&lt;body&gt;</span>
+                        <span>8</span>      <span class="tags">&lt;h5&gt;<span class="preto-html">Teste de Página</span>&lt;/h5&gt;</span>   
+                        <span>9</span>      <span class="tags">&lt;p&gt;<span class="preto-html">um teste de página</span>&lt;/p&gt;</span>
+                        <span>10</span>     <span class="tags">&lt;p&gt;&lt;i&gt;<span class="preto-html">Este texto está em itálico</span>&lt;/i&gt;&lt;/p&gt;</span>
+                        <span>11</span>   <span class="tags">&lt;/body&gt;</span>
+                        <span>12</span>  <span class="tags">&lt;/html&gt;</span>
+                    </pre>
+                </div>
+                <p>Código HTML5 para reproduzir áudio sem a necessidade de <a href="h">plug-ins</a></p>
+                <div id="codigos-html2">
+                    <pre id="html-pre2">
+                        <span class="doctype">&lt;!DOCTYPE html&gt;</span>
+                        <span class="tags">&lt;html <span class="lang">lang</span>=<span class="pt-br">"pt-BR"</span>&gt;</span>
+                        <span class="tags">&lt;head&gt;</span>  
+                        <span class="tags">&lt;meta <span class="lang">charset</span>=<span class="pt-br">"UTF-8"</span>&gt;</span>
+                        <span class="tags">&lt;title&gt;<span class="preto-html">Teste de Página</span>&lt;/title&gt;</span> 
+                        <span class="tags">&lt;/head&gt;</span>  
+                        <span class="tags">&lt;body&gt;</span>
+                            <span class="tags">&lt;h5&gt;<span class="preto-html">Teste de Página</span>&lt;/h5&gt;</span>   
+                            <span class="tags">&lt;p&gt;<span class="preto-html">um teste de página</span>&lt;/p&gt;</span>
+                            <span class="tags">&lt;p&gt;&lt;i&gt;<span class="preto-html">Este texto está em itálico</span>&lt;/i&gt;&lt;/p&gt;</span>
+                        <span class="tags">&lt;/body&gt;</span>
+                        <span class="tags">&lt;/html&gt;</span>
+                    </pre>
+                </div>
+                <h3 id="popularidade">
+                    Popularidade
+                </h3>
+                <hr>
+                <p>
+                    De acordo com um relatório divulgado em <a href="#">30 de setembro</a> de <a href="#">2011</a>, 34% dos 100 melhores Web sites do mundo estavam usando HTML5– a adaptação foi liderada por <a href="#">mecanismos de busca</a> e <a href="#">redes sociais</a>.[9] Em <a href="#">20 de outubro</a> de 2011, o <a href="#">Facebook</a> anunciou o lançamento do Centro de Recursos HTML, dando aos desenvolvedores ferramentas para construir, testar e implementar aplicações para o Facebook.[10]
+                </p>
+                <h3 id="logo">Logo do HTML5</h3>
+                <hr>
+                <div class="div-texto-logohtml5">
+                    <div class="texto-logohtml5">
+                        <p>
+                            Em 18 de janeiro de 2011, a <a href="#">W3C</a> introduziu uma logo para representar o uso de ou o interesse em HTML5. Diferente de outros emblemas anteriormente disponibilizadas pela W3C, esta não implica uma validação ou em uma conformidade com um certo padrão. Desde de o dia 1º de abril, este logotipo é oficial.[11]
+                            <br>
+                            Quando foi inicialmente apresentado ao público, a W3C anunciou o logotipo HTML5 como uma "Identidade visual de propósito geral para um vasto conjunto de tecnologias web de <a href="#">código aberto</a>, incluindo HTML5, <a href="#">CSS</a>, <a href="#">SVG</a>, Formato de Fonte Aberto (Open - de Código aberto) para Web (em inglês WOFF), e outros".[12] Alguns defensores de padrões web, incluindo o The Web Standards Project (O Projeto de Padrões Web), criticaram a definição de "HTML5" relatando este como um termo guarda-chuva, apontando para a falta de nitidez da terminologia e o potencial para o desentendimento.[12] Três dias depois, a <a href="#">W3C</a> respondeu à comunidade e alterou a definição do logotipo, retirando certas definições de tecnologias associadas a linguagem.[13] A <a href="#">W3C</a>  então disse que o logotipo "Representa o HTML5, a pedra angular para aplicações web modernas".[11]
+                        </p>
+                        <div class="img-logohtml5">
+                            <div id="div-img-logo">
+                                <img id="img-logo" src="img/logo html5.png" alt="logo html5">
+                            </div>
+                            <div id="caixinha-logotipo">
+                                <p>Logotipo do HTML5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="novos-elementos">
+                    Novos elementos do HTML5
+                </h3>
+                <hr>
+                <p>O HTML5 introduziu novos elementos:</p>
+                <div class="tabela-geral">
+                    <table id="table" border="1">
+                        <tr class="linha" id="linha1">
+                            <th class="titulo-tabela">Elemento</th>
+                            <th class="titulo-tabela">Definição</th>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;article&gt;
+                            </td>   
+                            <td>
+                                Define um artigo em um documento
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;aside&gt;
+                            </td>
+                            <td>
+                                Define um conteúdo, a parte, do conteúdo da página
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;bdi&gt;
+                            </td>
+                            <td>
+                                Define um texto que pode ser formatado em diferentes direções
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;details&gt;
+                            </td>
+                            <td>
+                                Define detalhes adicionais que o usuário pode ver ou ocultar
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;dialog&gt;
+                            </td>
+                            <td>
+                                Define uma caixa de diálogo ou janela
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;figcaption&gt;
+                            </td>
+                            <td>
+                                Define uma legenda para um elemento &lt;figure&gt;                                 
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;figure&gt;
+                            </td>
+                            <td>
+                                Define uma caixa Define um conteúdo como ilustrações, diagramas, fotos, códigos, listagens, etc.
+                                de diálogo ou janela
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;footer&gt;
+                            </td>
+                            <td>
+                                Define o rodapé do documento ou seção
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;header&gt;
+                            </td>
+                            <td>
+                                Define um cabeçalho para o documento ou uma seção
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;main&gt;
+                            </td>
+                            <td>
+                                Define o conteúdo principal de um documento
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;mark&gt;
+                            </td>
+                            <td>
+                                Define um texto marcado ou realçado
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;menuitem&gt;
+                            </td>
+                            <td>
+                                Define um commando/menu que pode ser usado para invocar um menu popup
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;meter&gt;
+                            </td>
+                            <td>
+                                Define uma medida escalar dentro de uma faixa conhecida
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;nav&gt;
+                            </td>
+                            <td>
+                                Define links de navegação no documento
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;progress&gt;
+                            </td>
+                            <td>
+                                Define o progresso de uma tarefa
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;rp&gt;
+                            </td>
+                            <td>
+                                Define o que exibir em navegadores que não exibem anotações ruby (anotações ruby são para mostrar a pronúncia de caracteres do Leste Asiático.)                            
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;rt&gt;
+                            </td>
+                            <td>
+                                Define a pronúncia de um caractere (para tipografias do Leste Asiático)                           
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;ruby&gt;
+                            </td>
+                            <td>
+                                Define uma anotação ruby (para tipografia do Leste Asiático)
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;section&gt;
+                            </td>
+                            <td>
+                                Define uma seção no documento
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;summary&gt;
+                            </td>
+                            <td>
+                                Define um título visível para um elemento  &lt;details&gt;
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;time&gt;
+                            </td>
+                            <td>
+                                Define uma data/hora
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;wbr&gt;
+                            </td>
+                            <td>
+                                Define uma possível quebra de linha
+                            </td>
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;datalist&gt;
+                            </td>
+                            <td>
+                                Lista opções predefinidas para controles <i>inputs</i>
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;keygen&gt;
+                            </td>
+                            <td>
+                                Define um campo de gerador de par de chaves (para formulários)
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;output&gt;
+                            </td>
+                            <td>
+                                Define o resultado de um cálculo
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;canvas&gt;
+                            </td>
+                            <td>
+                                Define um desenho gráfico usando JavaScript
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;svg&gt;
+                            </td>
+                            <td>
+                                Define um desenho gráfico usando SVG
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;audio&gt;
+                            </td>
+                            <td>
+                                Define um conteúdo de som ou música
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;embed&gt;
+                            </td>
+                            <td>
+                                Define um contêiner para aplicações externas (como plug-ins)
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;source&gt;
+                            </td>
+                            <td>
+                                Define fonte para &lt;video&gt; e &lt;audio&gt;
+                            </td>                            
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;track&gt;
+                            </td>
+                            <td>
+                                Define faixas para &lt;video&gt; e &lt;audio&gt;
+                            </td>                           
+                        </tr>
+                        <tr class="linha">
+                            <td class="coluna">
+                                &lt;video&gt;
+                            </td>
+                            <td>
+                                Define conteúdo de vídeo ou filme
+                            </td>                           
+                        </tr>
+                    </table>
+                </div>
+                <h3 id="ver-tambem">
+                    Ver também
+                </h3>
+                <hr>
+                <ul>
+                    <li><a href="#">Cascading Style Sheets</a></li>
+                    <li><a href="#">Canvas (HTML5)</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">WebGL</a></li>
+                </ul>
+                <h3 id="bibliografia">
+                    Bibliografia
+                </h3>
+                <hr>
+                <ul>
+                    <li>Rob Crowther, Joe Lennon, Ash Blue, Greg Wanish, HTML 5 Em Ação, ano 2014, Editora Novatec, ISBN 978-85-7522-399-4</li>
+                    <li>Eric Freeman, Elisabeth Robson, Use a Cabveça! Prograamção em HTML5, ano 2014, Editora Alta Books, ISBN 978-85-7608-845-5</li>
+                </ul>
+                <h3 id="referencias">
+                    Referências
+                </h3>
+                <hr>
+                <ul style="list-style-type: number;">
+                    <div class="div-referencias">
+                        <div class="referencia-esquerda">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg>
+                                <a href="#">«História»</a> (em inglês). Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                Anne van Kesteren; Simon Pieters (25 de maio de 2010). <a href="#">«HTML5 differences from HTML4»</a> (em inglês). <a href="#">W3C</a>. Consultado em 8 de setembro de 2020
+                            </li>   
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                <a href="#">«Erros de sintaxe»</a> (em inglês). Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                <a href="#">«HTML 4 Errata»</a>. W3C. Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                <a href="#">«Frequently Asked Questions (FAQ) about the future of XHTML»</a>. W3C. Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                Aamoth, Doug (29 de abril de 2010). <a href="#">«Steve Jobs: 'Flash is No Longer Necessary' and Other Musings»</a>. Time (em inglês). <a href="#">ISSN 0040-781X</a>. Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                Eaton, Kit (29 de abril de 2010). <a href="#">«Steve Jobs: Adobe's Flash Is Old PC History, Open Web Is the Future»</a>. Fast Company (em inglês). Consultado em 8 de setembro de 2020
+                            </li>
+                        </div>
+                        <div class="referencia-direita">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                <a href="#">«Is HTML5 Replacing Flash?»</a>. www.lyquix.com (em inglês). Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                <a href="#">«Porcentagem dos Web sites Usando HTML5»</a> (em inglês). Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                <a href="#">«Introduzindo o Centro de Recursos HTML5»</a> (em inglês). Facebook. Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                World Wide Web Consortium. <a href="#">«Logo HTML5 pela W3C FAQ»</a> (em inglês). Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                The Web Standards Project - O Projeto Padrões Web. <a href="#">«Logotipo HTML5 - Tenha orgulho, e não envergonhe as origens!»</a> (em inglês). Consultado em 8 de setembro de 2020
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                </svg> 
+                                World Wide Web Consortium. <a href="#">«Conversação sobre o logotipo HTML5»</a>. Consultado em 8 de setembro de 2020
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+                <h3 id="referencias">
+                    Ligações Externas
+                </h3>
+                <hr>
+                <div class="div-ligacoes-externas">
+                    <ul class="ligacoes-externas">
+                        <li>
+                            <a href="#">
+                                Sitio oficial
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                            </svg>
+                            (em inglês)
+                        </li>
+                        <li>
+                            <a href="#">
+                                «Teste de conformidade dos navegadores»
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                            </svg>
+                            (em inglês)
+                        </li>
+                        <li>
+                            <a href="#">
+                                «Aprenda HTML»
+                            </a> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                            </svg>
+                            na
+                            <a href="#"> 
+                                MDN
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="organiza-ligacoes-imagem">
+                            <img src="img/Commons-logo.svg.webp">
+                            <p>O <a href="#">Commons</a> possui uma categoria com imagens e outros ficheiros sobre <a href="#"><b>HTML5</b></a></p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="vde">
+                    <div class="div-interna-vde">
+                        <span class="vde-letras">
+                            <a href="#">V</a><a id="D" href="#">D</a><a href="#">E</a>
+                        </span>
+                        <span class="language-navegadores">
+                            <a href="#"><b>Hypertext Markup Language (HTML)</b></a>
+                        </span>
+                        <span class="expandir">
+                            [<a href="#">Expandir</a>]
+                        </span>
+                    </div>
+                </div>
+                <div class="vde">
+                    <div class="div-interna-vde">
+                        <span class="vde-letras">
+                            <a href="#">V</a><a id="D" href="#">D</a><a href="#">E</a>
+                        </span>
+                        <span class="language-navegadores">
+                            <a href="#">Navegadores web</a>
+                        </span>
+                        <span class="expandir">
+                            [<a href="#">Expandir</a>]
+                        </span>
+                    </div>
+                </div>
+                <div class="div-categorias">
+                    <span><a href="#">Categorias</a>:</span>
+                    <span class="barrinha"><a href="#">HTML</a></span>
+                    <span class="barrinha"><a href="#">Linguagem de marcação</a></span>
+                    <span class="barrinha"><a href="#">Normas W3C</a></span>
+                    <span><a href="#">Normas XML</a></span>
+                </div>
+            </div>
+        </main> 
+    </div>
+    <hr>
+    <footer style="font: 12px sans-serif;">
+        <p>
+            Esta página foi editada pela última vez às 03h45min de 26 de maio de 2022
+        </p>
+        <p>
+            Este texto é disponibilizado nos termos da licença Atribuição-CompartilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0) da Creative Commons; pode estar sujeito a condições adicionais. Para mais detalhes, consulte as condições de utilização.
+        </p>
+        <div>
+            <ul style="list-style: none; display: flex; gap: 20px; position: relative; right: 32px;">
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre a Wikipédia</a></li>
+                <li><a href="#">Avisos gerais</a></li>
+                <li><a href="#">Versão móvel</a></li>
+                <li><a href="#">Programadores</a></li>
+                <li><a href="#">Estatísticas</a></li>
+                <li><a href="#">Declaração sobre "cookies"</a></li>
+            </ul>
+            <img src="img/wikimedia-button-2x.png">
+            <img src="img/poweredby_mediawiki_176x62.png">
+        </div>
+    </footer>
+
+</body>
+</html>

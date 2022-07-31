@@ -1,0 +1,636 @@
+    
+/*parte geral da página*/
+body{
+    margin-top: 20px;
+    padding: 20px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    width: auto;
+    height: auto;
+}
+
+.conteudo-geral{
+    display: flex;
+    margin-top: 50px;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+/*primeira parte, header principal*/
+.div-header{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    align-items: center;
+    height: 35px;
+    justify-content: space-around;
+}
+
+#btn{
+    border: none;
+    background-color: white;
+}
+#btn:hover{
+    border: transparent;
+    background-color: rgb(247, 244, 244);
+}
+
+/*área do globo e do "wikipédiA"*/
+.div-wiki{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.globo-wiki{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#globo{
+    height: 50px;
+}
+
+.wiki-enciclo{
+    display: flex;
+    flex-direction: column;
+}
+
+/*área do input*/
+.div-input{
+    position: relative;
+    margin-right: 505px;
+    border: 1px solid grey;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}
+
+#input{
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 92%;
+    align-items: center;
+}
+
+#lupa{
+    color: rgb(86, 86, 86);
+}
+
+
+/*área criar conta*/
+.div-conta{
+    justify-content: space-between;
+}
+
+#criar-conta{
+    position: relative;
+    right: 15px;
+    font-weight: 700;
+}
+#criar-conta:hover{
+    padding: 0px 1px 2px 1px;
+    cursor: pointer;
+    border: transparent;
+    background-color: rgb(241, 239, 239);
+}
+
+#btn2{
+    border: transparent;
+    align-items: center;
+    font-size: 20px;
+    background-color: white;
+    font-weight: 900;
+}
+#btn2:hover{
+    cursor: pointer;
+    border: transparent;
+    background-color: rgb(241, 239, 239);
+}
+
+/*área - nav, coluna do lado esquerdo, com várias opções*/
+nav{
+    font-family: sans-serif;
+}
+
+.conteudo-geral .nav1{
+    position: relative;
+    top: 2px;
+    left: 25px;
+    border: transparent;
+    background-color: #f8f9fa;
+    margin-right: 2px;
+    width: 250px;
+    padding: 10px 15px;
+    line-height: 13px;
+    font-size: 12px;
+}
+
+.conteudo-geral .nav1 #texto-curto{
+    position: relative;
+    left: 15px;
+    border: 1px solid black;
+    background-color: #e3e3e3;
+    width: 180px;
+    height: 80px;
+    padding: 9px;
+    line-height: 11px;
+    align-items: center;
+    font: 12px sans-serif;
+}
+
+.conteudo-geral .nav2{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border: transparent;
+    background-color: #f8f9fa;
+    margin-right: 2px;
+    width: 250px;
+    padding: 10px 15px;
+    line-height: 13px;
+    font: 14px sans-serif;
+}
+
+/*linha que fica abaixo das palavras desabilitadas*/
+.linha-cinza{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+/*aproximando a linha dos nomes desabilitados*/
+.nav-link {
+    position: relative;
+    top: 20px;
+}
+.subir-palavra{
+    position: relative;
+    bottom: 30px;
+}
+/*subindo caixinha que está abaixo da palavra idioma*/
+.subir-palavra-textinho{
+    position: relative;
+    bottom: 8px;
+}
+
+/*área conteúdo principal*/
+.header-assunto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-html{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#html5{
+    position: relative;
+    margin-right: 100%;
+    left: 60px;
+}
+
+.form-select{
+    padding-left: 0px;
+    padding-right: 38px;
+    position: relative;
+    right: 16%;
+    bottom: 4px;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 0;
+    color: rgb(99, 99, 251);
+    font-weight: 550;
+    width: auto;
+    height: 40px;
+}
+.form-select:hover{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(195, 195, 246);
+    color: rgb(99, 99, 251);
+    font-weight: 550;
+    width: 140px;
+    height: 40px;
+}
+
+main .opcoes-pagina{
+    position: relative;
+    margin-bottom: 16px;
+    left: 60px;
+    bottom: 05px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(192, 191, 191);
+    border-left: transparent;
+    border-right: transparent;
+    background-color: #f8f9fa;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.opcoes-pagina ul li{
+    position: relative;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.opcoes-pagina ul li a{
+    text-decoration: none;
+}   
+.opcoes-pagina ul li .efeito-hover:hover{
+    padding-bottom: 3px;
+    border-bottom: 1px solid blue;
+}
+
+.opcoes-01{
+    position: relative;
+    right: 3%;
+    top: 17px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.opcoes-02{
+    position: relative;
+    bottom: 21px;
+    left: 770px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#artigo{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+#artigo::after{
+    content: "";
+    background-color: black;
+    width: 36px;
+    height: 1px;
+}
+
+#ler{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+#ler::after{
+    content: "";
+    background-color: black;
+    width: 20px;
+    height: 1px;
+}
+
+/*conteúdo propriamente dito*/
+.div-conteudo{
+    position: relative;
+    left: 60px;
+    max-width: 980px;
+}
+
+#frase{
+    font: 13px sans-serif;
+}
+
+.texto1{
+    width: 700px;
+}
+
+#conteudo{
+    font: 14px sans-serif;
+    line-height: 24px;
+}
+
+/*tirando efeito das tags <a> e colocando o efeito de sublinhado com o hover*/
+.div-conteudo a{
+    text-decoration: none;
+}
+.div-conteudo a:hover{
+    text-decoration: underline;
+}
+
+/*mudando cor da palavra zeewe*/
+#zeewe{
+    color: red;
+}
+
+/*palavra html com cor mais escura*/
+#html-maisEscuro{
+    color: rgb(5, 5, 75);
+}
+
+/*organização caixa com imagem e texto ao lado*/
+.texto-com-img{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/*caixa com imagem hmtl*/
+.caixa-html img{
+    position: relative;
+    top: 19.5px;
+    width: 90%;
+}
+
+.caixa-html{
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding-top: 0;
+    padding-bottom: 10px;
+    width: 260px;
+    height: 440px;
+    text-align: center;
+    float: right;
+}
+#hypertext{
+    position: relative;
+    top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font: 14px sans-serif;
+    font-weight: 600;
+    background-color: #B0C4DE;
+    border: transparent;
+    width: 96%;
+    height: 48px;
+}
+#markup{
+    position: relative;
+    top: 15px;
+}
+
+.detalhes-html ul li{
+    list-style: none;
+    text-align: justify;
+    position: relative;
+    top: 30px;
+    right: 22px;
+    line-height: 15px;
+}
+.detalhes-html ul li a{
+    text-decoration: none;
+}
+.detalhes-html ul li a:hover{
+    text-decoration: underline;
+}
+
+.detalhes-html{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font: 12px sans-serif;
+}
+
+
+#html-detalhes3{
+    position: relative;
+    top: 10px;
+}
+
+.htm{
+    margin-bottom: 7px;
+    border: 1px solid #eaecf0;
+    width: fit-content;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*organização dos códigos html*/
+#codigos-html1{
+    width: 100%;
+    position: relative;
+    border: 1px solid #eaecf0;
+    background-color: #f8f9fa;
+    height: 255px;
+}
+
+#html-pre1{
+    width: 100%;
+    position: relative;
+    right: 158px;
+}
+
+#codigos-html2{
+    width: 100%;
+    position: relative;
+    border: transparent;
+    border: 1px solid #eaecf0;
+    background-color: #f8f9fa;
+    height: 255px;
+}
+
+
+#html-pre2{
+    width: 100%;
+    position: relative;
+    right: 125px;
+}
+
+/*organizando cores do código html*/
+.doctype{
+    color: #BC7A00;
+}
+.tags{
+    color: #008000;
+}
+.lang{
+    color: #7D9029;
+}
+.pt-br{
+    color: #BA2121;
+}
+.preto-html{
+    color: black;
+}
+
+/*organizando área do texto Logo do HTML5 e sua imagem ao lado*/
+.div-texto-logohtml5{
+    display: flex;
+    width: 100%;
+}
+
+.texto-logohtml5{
+    display: flex;
+    position: relative;
+    gap: 50px;
+}
+
+.img-logohtml5{
+    position: relative;
+    float: right;
+    border: 10px double #c8ccd1;
+    background-color: #f8f9fa;
+    text-align: justify;
+    justify-content: center;
+    height: 200px;
+}
+
+
+#caixinha-logotipo p{
+    position: relative;
+    top: 10px;
+    font: 15px sans-serif;
+}
+
+#img-logo{
+    position: relative;
+    width: 152px;
+    height: 152px;
+}
+
+/*parte da tabela*/
+#table{
+    width: 100%;
+    font: 14px sans-serif;
+}
+
+.titulo-tabela{
+    font-weight: 800;
+    border: 2px solid #a2a9b1;
+    text-align: center;
+}
+
+#table tr th{
+    padding: 5px;
+}
+
+#table tr td{
+    padding: 5px;
+}
+
+.coluna{
+    font: 14px monospace;
+    border: 1px solid #a2a9b1;
+}
+.linha{
+    border: 1px solid #a2a9b1;
+}
+
+#linha1{
+    background-color: #f8f9fa;
+    font: 14px sans-serif;
+}
+
+/*parte das referências*/
+.div-referencias{
+    display: flex;
+    padding: 0px 0px 10px 10px;
+    justify-content: space-between;
+    gap: 3rem;
+    font: 13px sans-serif;
+    line-height: 22px;
+}
+
+
+/*organizando ligações externas*/
+.div-ligacoes-externas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ligacoes-externas li a{
+    font: 15px solid sans-serif;
+}
+
+.organiza-ligacoes-imagem img{
+    width: 24px;
+    height: auto;
+    position: relative;
+    bottom: 10px;
+}
+
+.organiza-ligacoes-imagem{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    font: 12.6px sans-serif;
+    width: 238px;
+    height: 60px;
+    padding: 5px;
+}
+
+/*organizando barrinhas com V.D.E, localizadas ao final da página*/
+.vde{
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    text-align: justify;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.div-interna-vde{
+    background-color: #ccccff;
+    text-align: center;
+    margin: 4px;
+    line-height: 1.5rem;
+}
+
+.vde-letras{
+    font: 9.5px sans-serif;
+}
+
+.expandir{
+    text-align: end;
+}
+
+
+/*organizando parte de categorias*/
+.div-categorias{
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 7px;
+    border: 1px solid #a2a9b1;
+}
+
+.barrinha{
+    border-right: 1px solid #a2a9b1;
+    padding: 0px 7px;
+}
+
+/*cofigurando footer*/
+footer ul li a{
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+footer div{
+    display: flex;
+}
+
+footer img{
+    width: 6%;
+    margin: 5px;
+    position: relative;
+    left: 480px;
+}
